@@ -1,5 +1,77 @@
+/* General */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.col-33{
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+
+.align-center{
+    justify-content: center;
+}
+
+.align-right{
+    justify-content: flex-end;
+}
+
+.align-left{
+    justify-content: flex-start;
+}
+
+
+/* Header - Top bar */
+
+header{
+    background-color: #ff6900;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.content-header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.content-header ul li{
+    padding: 0 5px;
+}
+
+.content-header img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+
+/* Footer - Foot bar */
