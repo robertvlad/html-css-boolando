@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -34,44 +34,155 @@
     justify-content: flex-start;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body{
+    z-index: 0;
+}
+
+header{
+    z-index: 1;
+}
 
 /* Header - Top bar */
 
 header{
     background-color: #ff6900;
-    color: #ffffff;
     height: 80px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.content-header ul{
+.content ul{
     list-style-type: none;
     display: flex;
 }
 
-.content-header ul li{
+.content ul li{
     padding: 0 5px;
 }
 
-.content-header img{
+.content img{
     width: 150px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main */
 
+main{
+    margin: 120px 0;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.front-img, .back-img{
+    width: 100%;
+}
+
+.back-img{
+    display: none;
+}
+
+.product-name{
+    text-transform: uppercase;
+}
+
+.product-price, .heart:hover{
+    color: #ff0000;
+}
+
+.card-img{
+    position: relative;
+}
+
+.badge{
+    color: #ffffff;
+    padding: 5px;
+}
+
+.badge-red{
+    background-color: #ff0000;
+}
+
+.badge-green{
+    background-color: #008000;
+}
+
+.row-main-1, .row-main-2{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.row-main-1{
+    margin-bottom: 50px;
+}
+
+.card-badges{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.card-img:hover .back-img{
+    display: block;
+}
+
+.card-img:hover .front-img{
+    display: none;
+}
+
+.front-img{
+    display: block;
+}
+
+
 /* Footer - Foot bar */
+
+footer{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.footer-content ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-content ul li{
+    padding-right: 5px;
+    margin-top: 10px;
+}
+.col-50-l{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col-50-r{
+    display: flex;
+    justify-content: flex-end;
+}
