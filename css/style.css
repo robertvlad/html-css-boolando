@@ -43,9 +43,6 @@ body{
     z-index: 0;
 }
 
-header{
-    z-index: 1;
-}
 
 /* Header - Top bar */
 
@@ -58,6 +55,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .content ul{
